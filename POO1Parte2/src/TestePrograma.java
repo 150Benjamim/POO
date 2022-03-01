@@ -29,8 +29,6 @@ public class TestePrograma {
 
         long tgasto = test.tempoGasto();
         System.out.println("Tempo que demora a fazer factorial de 5000: "+tgasto + ((tgasto == 1) ? " milisegundo" : " milisegundos"));
-
     }
-
 
 }

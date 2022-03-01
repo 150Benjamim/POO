@@ -3,10 +3,7 @@ import java.util.Scanner;
 import java.time.Duration;
 
 
-
-
 public class Ficha1 {
-
 
     public double celsiusParaFarenheit(double graus){
 
@@ -14,24 +11,20 @@ public class Ficha1 {
         return temp;
     }
 
-
     public int maximoNumeros(int a, int b){
         if(a>=b) return a;
         else return b;
     }
-
 
     public String criaDescricaoConta(String nome, double saldo){
 
         return ("Nome: " +nome+ " Saldo: " +saldo+ "$");
     }
 
-
     public double eurosParaLibras(double valor, double taxaConversao){
 
         return valor * taxaConversao;
     }
-
 
     public void lerIntMedia(Scanner ler){
 
@@ -41,7 +34,6 @@ public class Ficha1 {
         if (x<=y) System.out.println(y+", "+x+", Média:" +(x+y)/2);
         else System.out.println(x+", "+y+", Média:" +(x+y)/2);
     }
-
 
     public long factorial(int num){
 
@@ -54,7 +46,6 @@ public class Ficha1 {
         return r;
     }
 
-
     public long tempoGasto() {
 
         LocalDateTime primeiroS = LocalDateTime.now();
@@ -65,6 +56,5 @@ public class Ficha1 {
 
         return (r.toMillis());
     }
-
 
 }
