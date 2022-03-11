@@ -7,7 +7,7 @@ public class ExcCinco {
     public boolean repetition (String x, String[] lista, int pos){
 
         for (int i = 0; i<pos; i++){
-            if (x == lista[i]) return true;
+            if (x.equals(lista[i])) return true;
         }
 
         return false;
@@ -52,7 +52,7 @@ public class ExcCinco {
         for (int i = 0; i<lista.length; i++){
             int contador = 0;
             for (int j = 0; j<lista.length; j++){
-                if (lista[i] == lista[j]) contador++;
+                if (lista[i].equals(lista[j])) contador++;
             }
             if (contador>=2 && !repetition(lista[i],aux,pos)){
                 aux[pos] = lista[i];
@@ -72,7 +72,7 @@ public class ExcCinco {
         int contador = 0;
 
         for (int i = 0; i<lista.length; i++){
-            if (lista[i] == str) contador++;
+            if (lista[i].equals(str)) contador++;
         }
 
         return contador;
