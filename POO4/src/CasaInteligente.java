@@ -61,9 +61,9 @@ public class CasaInteligente {
         maisGastadora = this.lampadas.stream().max((lampada1,lampada2)->Long.compare(lampada1.totalConsumo(),lampada2.totalConsumo()));
         //maisGastadora = this.lampadas.stream().reduce((lampada1,lampada2) -> lampada1.totalConsumo() >= lampada2.totalConsumo() ? lampada1 : lampada2);
         if (maisGastadora.isPresent()){
-            return maisGastadora.get();
+            return maisGastadora.get().clone();
         }
-        else return null;
+        return null;
     }
 
 
