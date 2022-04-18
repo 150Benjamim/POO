@@ -78,10 +78,10 @@ public class FBFeed {
 
     public List<Integer> top5Comments(){
 
-        return this.posts.stream().sorted(Comparator.comparingLong(FBPost::numeroComentarios)).
+        return this.posts.stream().sorted(Comparator.comparingLong(FBPost::numeroComentarios).reversed()).
                                    limit(5).
                                    map(FBPost::getIdentificador).
                                    collect(Collectors.toList());
     }
-    
+
 }
